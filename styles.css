@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -13,35 +13,98 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  align-items: center;
+ align-items: center;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .logo span {
-  color: #ff2da8;
+  color: rgb(245, 93, 38)
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 16px;
   color: #ccc;
   text-decoration: none;
 }
-
-.subscribe-btn {
-  background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
-  border: none;
+ .btn:hover{
+    background: rgb(36, 100, 196);
+    
+}
+.subscribe-btn{
+  background: linear-gradient(45deg, #f7e93f, #fb0909, #5f00f8);
+  border: none; 
   padding: 8px 18px;
   border-radius: 20px;
   color: #000;
   cursor: pointer;
 }
 
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
 
+.hero-circle {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 0;71
+  background: #00ff9c;
+  color: #000;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.hero-size{
+    margin: 0 auto;
+    height: 78%;
+   max-width: 1366px;
+}
+
+
+.hero h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: 15px auto;
+  color: #ccc;
+}
+
+.hero-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.spotify {
+  background: #1db954;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #fb09b4;
+  color: #fff;
+}
 
 
 
@@ -49,4 +112,26 @@ nav a {
   nav {
     display: none;
   }
+  .logo{
+     display: flex;
+  justify-content: space-between;
+  padding: 16px 20px ;
+  align-items: center;
+  gap: 200px;
+  
+  }
+  .subscribe-btn{
+    display: none;
+  }
 }
+@media (min-width: 766px) and (max-width: 1366px){
+  .resize{
+    display: none;
+}
+.navbar{
+     padding: 20px 200px;
+}
+  
+}
+
+
