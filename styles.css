@@ -173,12 +173,45 @@ color: white
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
+  grid-column: span 3;
+  grid-row: span 3;
 }
 
-.card {
+.card-1,.card-2, .card-3,.card-4,.card-5{
   background: #24003f;
   padding: 40px;
   border-radius: 40px;
+  
+}
+
+.card-1{
+  grid-row: span 2;
+  grid-column: span 1;
+  height: 480px;
+}
+.card-2{
+   grid-row: span 1;
+  grid-column: span 2;
+  height: 225px;
+  gap: 30px;
+}
+.card-3{
+    grid-row: span 1;
+  grid-column: span 2;
+  height: 225px;
+  gap: 30px;
+  
+
+}
+.card-4{
+   grid-row: span 1;
+  grid-column: span 2;
+  height: 273px;
+}
+.card-5{
+  grid-row: span 1;
+  grid-column: span 1;
+  height: 273px;
 }
 @media (max-width: 576px) 
 
